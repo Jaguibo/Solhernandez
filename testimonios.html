@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Testimonios | Dr. Alfredo Sol Hernández - Urólogo Pediatra</title>
-  <meta name="description" content="Testimonios reales y opiniones verificadas de familias y pacientes que confiaron en el Dr. Alfredo Sol Hernández, urólogo pediatra en San Salvador y Escalón.">
+  <meta name="description" content="Testimonios reales y opiniones verificadas de familias y pacientes que confiaron en el Dr. Alfredo Sol Hernández, urólogo pediatra San Salvador.">
   <meta name="keywords" content="testimonios, opiniones pacientes, recomendaciones, Dr. Alfredo Sol Hernández, urólogo pediatra, San Salvador">
   <meta name="author" content="Dr. Alfredo Sol Hernández">
   <link rel="canonical" href="https://tusitio.com/testimonios.html">
@@ -16,12 +16,15 @@
   <meta property="og:image" content="https://github.com/Jaguibo/Solhernandez/raw/main/dr-alfredo-sol-hernandez-cirujano-urologo-pediatra%20(1).webp" />
   <meta property="og:image:alt" content="Retrato del Dr. Alfredo Sol Hernández, urólogo pediatra certificado con más de 30 años de experiencia en cirugía pediátrica" />
 
+  <!-- ✅ FAVICON -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
 
   <!-- ✅ TAILWIND & ICONOS -->
-<link href="css/output.css" rel="stylesheet">
-
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="css/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </noscript>
 
   <!-- ✅ SCHEMA TESTIMONIOS -->
   <script type="application/ld+json">
@@ -105,7 +108,7 @@
     <!-- ✅ GRID DE TESTIMONIOS -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-      <!-- Ejemplo Testimonio 1 -->
+      <!-- Testimonio 1 -->
       <div class="bg-white p-6 rounded-xl shadow-md">
         <div class="flex items-center mb-4">
           <div class="text-yellow-400 mr-2">
@@ -125,7 +128,7 @@
         </div>
       </div>
 
-      <!-- Ejemplo Testimonio 2 -->
+      <!-- Testimonio 2 -->
       <div class="bg-white p-6 rounded-xl shadow-md">
         <div class="flex items-center mb-4">
           <div class="text-yellow-400 mr-2">
@@ -145,7 +148,7 @@
         </div>
       </div>
 
-      <!-- Ejemplo Testimonio 3 -->
+      <!-- Testimonio 3 -->
       <div class="bg-white p-6 rounded-xl shadow-md">
         <div class="flex items-center mb-4">
           <div class="text-yellow-400 mr-2">
@@ -165,7 +168,6 @@
         </div>
       </div>
 
-      <!-- 🔑 Añade más testimonios aquí si lo deseas -->
     </div>
   </div>
 </section>
@@ -198,12 +200,14 @@
   </div>
 </footer>
 
-<!-- ✅ SCRIPT MENÚ RESPONSIVO -->
-<script>
-  document.getElementById('menu-btn').addEventListener('click', function() {
-    document.getElementById('mobile-menu').classList.toggle('hidden');
-  });
-</script>
+<!-- ✅ BOTÓN WHATSAPP -->
+<a href="https://api.whatsapp.com/send?phone=50377676406&text=Hola%20Dr.%20Sol%2C%20vengo%20desde%20la%20página%20de%20testimonios%20y%20quiero%20más%20información."
+   class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg z-50"
+   target="_blank" aria-label="WhatsApp">
+  <i class="fab fa-whatsapp text-2xl"></i>
+</a>
 
+<!-- ✅ SCRIPT MENÚ RESPONSIVO -->
+<script src="js/main.js" defer></script>
 </body>
 </html>

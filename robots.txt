@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sitio-web-sol-papa.onrender.com/sitemap.xml

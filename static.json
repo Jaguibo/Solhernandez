@@ -1,6 +1,31 @@
 {
   "redirects": [
     {
+      "source": "/contacto",
+      "destination": "/contacto.html",
+      "statusCode": 200
+    },
+    {
+      "source": "/faqs",
+      "destination": "/faqs.html",
+      "statusCode": 200
+    },
+    {
+      "source": "/servicios",
+      "destination": "/servicios.html",
+      "statusCode": 200
+    },
+    {
+      "source": "/sobre-mi",
+      "destination": "/sobre-mi.html",
+      "statusCode": 200
+    },
+    {
+      "source": "/testimonios",
+      "destination": "/testimonios.html",
+      "statusCode": 200
+    },
+    {
       "source": "/(.*)",
       "destination": "https://sitio-web-sol-papa.onrender.com/$1",
       "statusCode": 301
