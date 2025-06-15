@@ -69,34 +69,47 @@
 <!-- ✅ HEADER -->
 <header class="fixed w-full bg-white shadow z-40">
   <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+    <!-- Logo y nombre -->
     <div class="flex items-center">
-      <img src="https://raw.githubusercontent.com/Jaguibo/Solhernandez/refs/heads/main/Imagenes/dr-alfredo-sol-hernandez-cirujano-urologo-pediatra.webp"
-           alt="Dr. Alfredo Sol Hernández, urólogo pediatra en San Salvador"
-           width="48" height="48" loading="lazy"
-           class="h-12 w-12 rounded-full object-cover mr-3">
+      <img 
+        src="https://raw.githubusercontent.com/Jaguibo/Solhernandez/refs/heads/main/Imagenes/dr-alfredo-sol-hernandez-cirujano-urologo-pediatra.webp"
+        alt="Retrato del Dr. Alfredo Sol Hernández, urólogo pediatra certificado con más de 30 años de experiencia en cirugía pediátrica"
+        width="48" height="48" loading="lazy"
+        class="h-12 w-12 rounded-full object-cover mr-3">
       <h1 class="text-xl font-bold">Dr. Alfredo Sol Hernández</h1>
     </div>
+
+    <!-- Menú de escritorio -->
     <nav class="hidden md:flex space-x-8">
       <a href="index.html" class="hover:text-blue-700">Inicio</a>
       <a href="servicios.html" class="hover:text-blue-700">Servicios</a>
       <a href="sobre-mi.html" class="hover:text-blue-700">Sobre Mí</a>
-      <a href="testimonios.html" class="text-blue-600 underline font-semibold">Testimonios</a>
+      <a href="testimonios.html" class="hover:text-blue-700">Testimonios</a>
       <a href="faqs.html" class="hover:text-blue-700">Preguntas</a>
-      <a href="contacto.html" class="hover:text-blue-700">Contacto</a>
+      <a href="contacto.html" class="text-blue-600 underline font-semibold">Contacto</a>
     </nav>
-    <button id="menu-btn" class="md:hidden text-blue-700 text-2xl focus:outline-none">
+
+    <!-- Botón menú móvil accesible -->
+    <button 
+      id="menu-btn"
+      class="md:hidden text-blue-700 text-2xl focus:outline-none"
+      aria-label="Abrir menú de navegación"
+      aria-expanded="false">
       <i class="fas fa-bars"></i>
     </button>
   </div>
+
+  <!-- Menú móvil -->
   <div id="mobile-menu" class="hidden md:hidden bg-white py-2 px-4 shadow-lg">
     <a href="index.html" class="block py-2 text-gray-600">Inicio</a>
     <a href="servicios.html" class="block py-2 text-gray-600">Servicios</a>
     <a href="sobre-mi.html" class="block py-2 text-gray-600">Sobre Mí</a>
-    <a href="testimonios.html" class="block py-2 text-blue-600">Testimonios</a>
+    <a href="testimonios.html" class="block py-2 text-gray-600">Testimonios</a>
     <a href="faqs.html" class="block py-2 text-gray-600">Preguntas</a>
-    <a href="contacto.html" class="block py-2 text-gray-600">Contacto</a>
+    <a href="contacto.html" class="block py-2 text-blue-600">Contacto</a>
   </div>
 </header>
+
 
 <!-- ✅ SECCIÓN TESTIMONIOS -->
 <section class="py-24 bg-gray-50">
@@ -201,11 +214,14 @@
 </footer>
 
 <!-- ✅ BOTÓN WHATSAPP -->
-<a href="https://api.whatsapp.com/send?phone=50377676406&text=Hola%20Dr.%20Sol%2C%20vengo%20desde%20la%20página%20de%20testimonios%20y%20quiero%20más%20información."
+<!-- ✅ Botón WhatsApp (accesible y con descripción clara) -->
+<a href="https://api.whatsapp.com/send?phone=50377676406&text=Hola%20Dr.%20Sol%2C%20vengo%20desde%20su%20página%20404%20y%20necesito%20ayuda."
    class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg z-50"
-   target="_blank" aria-label="WhatsApp">
+   target="_blank" rel="noopener noreferrer"
+   aria-label="Abrir chat de WhatsApp con el Dr. Sol">
   <i class="fab fa-whatsapp text-2xl"></i>
 </a>
+
 
 <!-- ✅ SCRIPT MENÚ RESPONSIVO -->
 <script src="js/main.js" defer></script>

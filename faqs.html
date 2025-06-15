@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="es">
 <head>
   <!-- ✅ META BÁSICOS PARA SEO -->
   <meta charset="UTF-8" />
@@ -81,37 +83,49 @@
 
 <body class="font-sans antialiased text-gray-800 bg-white">
 
-  <!-- ✅ HEADER -->
-  <header class="fixed w-full bg-white shadow z-40">
-    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-      <div class="flex items-center">
-        <img src="https://raw.githubusercontent.com/Jaguibo/Solhernandez/refs/heads/main/Imagenes/dr-alfredo-sol-hernandez-cirujano-urologo-pediatra.webp"
-             alt="Dr. Alfredo Sol Hernández, urólogo pediatra en San Salvador"
-             width="48" height="48" loading="lazy"
-             class="h-12 w-12 rounded-full object-cover mr-3">
-        <h1 class="text-xl font-bold">Dr. Alfredo Sol Hernández</h1>
-      </div>
-      <nav class="hidden md:flex space-x-8">
-        <a href="index.html" class="hover:text-blue-700">Inicio</a>
-        <a href="servicios.html" class="hover:text-blue-700">Servicios</a>
-        <a href="sobre-mi.html" class="hover:text-blue-700">Sobre Mí</a>
-        <a href="testimonios.html" class="hover:text-blue-700">Testimonios</a>
-        <a href="faqs.html" class="text-blue-600 underline font-semibold">Preguntas</a>
-        <a href="contacto.html" class="hover:text-blue-700">Contacto</a>
-      </nav>
-      <button id="menu-btn" class="md:hidden text-blue-700 text-2xl focus:outline-none">
-        <i class="fas fa-bars"></i>
-      </button>
+<!-- ✅ HEADER -->
+<header class="fixed w-full bg-white shadow z-40">
+  <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+    <!-- Logo y nombre -->
+    <div class="flex items-center">
+      <img 
+        src="https://raw.githubusercontent.com/Jaguibo/Solhernandez/refs/heads/main/Imagenes/dr-alfredo-sol-hernandez-cirujano-urologo-pediatra.webp"
+        alt="Retrato del Dr. Alfredo Sol Hernández, urólogo pediatra certificado con más de 30 años de experiencia en cirugía pediátrica"
+        width="48" height="48" loading="lazy"
+        class="h-12 w-12 rounded-full object-cover mr-3">
+      <h1 class="text-xl font-bold">Dr. Alfredo Sol Hernández</h1>
     </div>
-    <div id="mobile-menu" class="hidden md:hidden bg-white py-2 px-4 shadow-lg">
-      <a href="index.html" class="block py-2 text-gray-600">Inicio</a>
-      <a href="servicios.html" class="block py-2 text-gray-600">Servicios</a>
-      <a href="sobre-mi.html" class="block py-2 text-gray-600">Sobre Mí</a>
-      <a href="testimonios.html" class="block py-2 text-gray-600">Testimonios</a>
-      <a href="faqs.html" class="block py-2 text-blue-600">Preguntas</a>
-      <a href="contacto.html" class="block py-2 text-gray-600">Contacto</a>
-    </div>
-  </header>
+
+    <!-- Menú de escritorio -->
+    <nav class="hidden md:flex space-x-8">
+      <a href="index.html" class="hover:text-blue-700">Inicio</a>
+      <a href="servicios.html" class="hover:text-blue-700">Servicios</a>
+      <a href="sobre-mi.html" class="hover:text-blue-700">Sobre Mí</a>
+      <a href="testimonios.html" class="hover:text-blue-700">Testimonios</a>
+      <a href="faqs.html" class="hover:text-blue-700">Preguntas</a>
+      <a href="contacto.html" class="text-blue-600 underline font-semibold">Contacto</a>
+    </nav>
+
+    <!-- Botón menú móvil accesible -->
+    <button 
+      id="menu-btn"
+      class="md:hidden text-blue-700 text-2xl focus:outline-none"
+      aria-label="Abrir menú de navegación"
+      aria-expanded="false">
+      <i class="fas fa-bars"></i>
+    </button>
+  </div>
+
+  <!-- Menú móvil -->
+  <div id="mobile-menu" class="hidden md:hidden bg-white py-2 px-4 shadow-lg">
+    <a href="index.html" class="block py-2 text-gray-600">Inicio</a>
+    <a href="servicios.html" class="block py-2 text-gray-600">Servicios</a>
+    <a href="sobre-mi.html" class="block py-2 text-gray-600">Sobre Mí</a>
+    <a href="testimonios.html" class="block py-2 text-gray-600">Testimonios</a>
+    <a href="faqs.html" class="block py-2 text-gray-600">Preguntas</a>
+    <a href="contacto.html" class="block py-2 text-blue-600">Contacto</a>
+  </div>
+</header>
 
   <!-- ✅ SECCIÓN FAQ -->
   <section class="py-24 bg-gray-100">
@@ -145,33 +159,45 @@
     </div>
   </section>
 
-  <!-- ✅ FOOTER -->
-  <footer class="bg-gray-900 text-white py-10 mt-16">
-    <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
-      <div class="flex items-center mb-6 md:mb-0">
-        <img src="https://raw.githubusercontent.com/Jaguibo/Solhernandez/refs/heads/main/Imagenes/dr-alfredo-sol-hernandez-cirujano-urologo-pediatra.webp" 
-             alt="Logo Dr. Alfredo Sol Hernández, urólogo pediatra"
-             width="48" height="48" loading="lazy"
-             class="h-12 w-12 rounded-full object-cover mr-3">
-        <div>
-          <h2 class="text-xl font-bold">Dr. Alfredo Sol Hernández</h2>
-          <p class="mt-2 text-gray-400">Cirujano Pediatra Urólogo</p>
-        </div>
-      </div>
-      <div class="flex flex-col items-center md:items-end">
-        <div class="flex space-x-6 mb-4">
-          <a href="https://www.facebook.com/CIRUPEDES/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
-          <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
-          <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
-        </div>
-        <p class="text-gray-400 text-sm">© 2025 Dr. Alfredo Sol Hernández. Todos los derechos reservados.</p>
-        <p class="text-sm text-gray-400 mt-2">
-          ¿Necesitas más ayuda? Revisa <a href="faqs.html" class="text-blue-400 underline">Preguntas Frecuentes</a> o <a href="contacto.html" class="text-blue-400 underline">Contáctanos</a>.
-        </p>
+<!-- ✅ FOOTER optimizado -->
+<footer class="bg-gray-900 text-white py-10">
+  <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+    <div class="flex items-center mb-6 md:mb-0">
+      <img src="https://raw.githubusercontent.com/Jaguibo/Solhernandez/refs/heads/main/Imagenes/dr-alfredo-sol-hernandez-cirujano-urologo-pediatra.webp" 
+           alt="Logo Dr. Alfredo Sol Hernández, urólogo pediatra"
+           width="48" height="48" loading="lazy"
+           class="h-12 w-12 rounded-full object-cover mr-3">
+      <div>
+        <h2 class="text-xl font-bold">Dr. Alfredo Sol Hernández</h2>
+        <p class="mt-2 text-gray-400">Cirujano Pediatra Urólogo</p>
       </div>
     </div>
-  </footer>
+
+    <div class="flex flex-col items-center md:items-end">
+      <!-- ✅ Solo un contenedor para redes -->
+      <div class="flex space-x-6 mb-4">
+        <a href="https://www.facebook.com/CIRUPEDES/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white" aria-label="Facebook del Dr. Sol">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="text-gray-400 hover:text-white" aria-label="Twitter del Dr. Sol">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="text-gray-400 hover:text-white" aria-label="Instagram del Dr. Sol">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" class="text-gray-400 hover:text-white" aria-label="LinkedIn del Dr. Sol">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+
+      <p class="text-gray-400 text-sm">© 2025 Dr. Alfredo Sol Hernández. Todos los derechos reservados.</p>
+      <p class="text-sm text-gray-400 mt-2">
+        ¿Necesitas ayuda? Revisa <a href="faqs.html" class="text-blue-400 underline">Preguntas Frecuentes</a> o <a href="contacto.html" class="text-blue-400 underline">Contáctanos</a>.
+      </p>
+    </div>
+  </div>
+</footer>
+
 
   <script src="js/main.js" defer></script>
 </body>

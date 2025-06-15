@@ -1,9 +1,18 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // ✅ Toggle menú móvil
+  // ✅ Toggle menú móvil con accesibilidad mejorada
   const menuBtn = document.getElementById('menu-btn');
   const mobileMenu = document.getElementById('mobile-menu');
   if (menuBtn && mobileMenu) {
     menuBtn.addEventListener('click', () => {
+      // Cambia estado aria-expanded
+      const expanded = menuBtn.getAttribute('aria-expanded') === 'true';
+      menuBtn.setAttribute('aria-expanded', !expanded);
+      // Cambia aria-label según estado
+      menuBtn.setAttribute(
+        'aria-label',
+        expanded ? 'Abrir menú de navegación' : 'Cerrar menú de navegación'
+      );
+      // Muestra u oculta menú
       mobileMenu.classList.toggle('hidden');
     });
   }
@@ -27,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // ✅ Formulario de contacto
+  // ✅ Formulario de contacto con mensaje de éxito
   const form = document.getElementById('contact-form');
   const successMessage = document.getElementById('success-message');
   if (form && successMessage) {

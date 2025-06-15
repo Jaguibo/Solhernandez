@@ -52,40 +52,51 @@
     <a href="/" class="bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-800 transition">Volver al inicio</a>
   </main>
 
-  <!-- ✅ FOOTER -->
-  <footer class="bg-gray-900 text-white py-10">
-    <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
-      <div class="flex items-center mb-6 md:mb-0">
-        <img src="https://raw.githubusercontent.com/Jaguibo/Solhernandez/refs/heads/main/Imagenes/dr-alfredo-sol-hernandez-cirujano-urologo-pediatra.webp" 
-             alt="Logo Dr. Alfredo Sol Hernández, urólogo pediatra"
-             width="48" height="48" loading="lazy"
-             class="h-12 w-12 rounded-full object-cover mr-3">
-        <div>
-          <h2 class="text-xl font-bold">Dr. Alfredo Sol Hernández</h2>
-          <p class="mt-2 text-gray-400">Cirujano Pediatra Urólogo</p>
-        </div>
-      </div>
-      <div class="flex flex-col items-center md:items-end">
-        <div class="flex space-x-6 mb-4">
-          <a href="https://www.facebook.com/CIRUPEDES/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
-          <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
-          <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
-        </div>
-        <p class="text-gray-400 text-sm">© 2025 Dr. Alfredo Sol Hernández. Todos los derechos reservados.</p>
-        <p class="text-sm text-gray-400 mt-2">
-          ¿Necesitas ayuda? Revisa <a href="faqs.html" class="text-blue-400 underline">Preguntas Frecuentes</a> o <a href="contacto.html" class="text-blue-400 underline">Contáctanos</a>.
-        </p>
+<!-- ✅ FOOTER optimizado -->
+<footer class="bg-gray-900 text-white py-10">
+  <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+    <div class="flex items-center mb-6 md:mb-0">
+      <img src="https://raw.githubusercontent.com/Jaguibo/Solhernandez/refs/heads/main/Imagenes/dr-alfredo-sol-hernandez-cirujano-urologo-pediatra.webp" 
+           alt="Logo Dr. Alfredo Sol Hernández, urólogo pediatra"
+           width="48" height="48" loading="lazy"
+           class="h-12 w-12 rounded-full object-cover mr-3">
+      <div>
+        <h2 class="text-xl font-bold">Dr. Alfredo Sol Hernández</h2>
+        <p class="mt-2 text-gray-400">Cirujano Pediatra Urólogo</p>
       </div>
     </div>
-  </footer>
 
-  <!-- ✅ Botón WhatsApp (opcional, pero recomendable) -->
-  <a href="https://api.whatsapp.com/send?phone=50377676406&text=Hola%20Dr.%20Sol%2C%20vengo%20desde%20su%20página%20404%20y%20necesito%20ayuda."
-     class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg z-50"
-     target="_blank" aria-label="WhatsApp">
-    <i class="fab fa-whatsapp text-2xl"></i>
-  </a>
+    <div class="flex flex-col items-center md:items-end">
+      <!-- ✅ Solo un contenedor para redes -->
+      <div class="flex space-x-6 mb-4">
+        <a href="https://www.facebook.com/CIRUPEDES/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white" aria-label="Facebook del Dr. Sol">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="text-gray-400 hover:text-white" aria-label="Twitter del Dr. Sol">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="text-gray-400 hover:text-white" aria-label="Instagram del Dr. Sol">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" class="text-gray-400 hover:text-white" aria-label="LinkedIn del Dr. Sol">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
 
-</body>
-</html>
+      <p class="text-gray-400 text-sm">© 2025 Dr. Alfredo Sol Hernández. Todos los derechos reservados.</p>
+      <p class="text-sm text-gray-400 mt-2">
+        ¿Necesitas ayuda? Revisa <a href="faqs.html" class="text-blue-400 underline">Preguntas Frecuentes</a> o <a href="contacto.html" class="text-blue-400 underline">Contáctanos</a>.
+      </p>
+    </div>
+  </div>
+</footer>
+
+
+<!-- ✅ Botón WhatsApp (accesible y con descripción clara) -->
+<a href="https://api.whatsapp.com/send?phone=50377676406&text=Hola%20Dr.%20Sol%2C%20vengo%20desde%20su%20página%20404%20y%20necesito%20ayuda."
+   class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg z-50"
+   target="_blank" rel="noopener noreferrer"
+   aria-label="Abrir chat de WhatsApp con el Dr. Sol">
+  <i class="fab fa-whatsapp text-2xl"></i>
+</a>
+
