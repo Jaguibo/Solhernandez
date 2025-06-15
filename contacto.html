@@ -83,109 +83,59 @@
     </div>
   </header>
 
-  <!-- ✅ SECCIÓN CONTACTO -->
-  <section class="py-24 bg-blue-800 text-white">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold mb-6">Contacto</h2>
-      <div class="flex flex-col md:flex-row">
-        <!-- 📌 INFO DE CONTACTO -->
-        <div class="md:w-1/2 md:pr-8 mb-10 md:mb-0">
-          <h3 class="text-2xl font-semibold mb-6">Información de Contacto</h3>
-          <div class="space-y-4 mb-6">
-            <div class="flex items-start">
-              <div class="bg-blue-700 p-3 rounded-full mr-4"><i class="fas fa-map-marker-alt"></i></div>
-              <div>
-                <h4 class="font-semibold">Dirección</h4>
-                <p>Hospital Especializado Avante Escalón<br>3a Calle Poniente 4920, San Salvador</p>
-              </div>
-            </div>
-            <div class="flex items-start">
-              <div class="bg-blue-700 p-3 rounded-full mr-4"><i class="fas fa-phone-alt"></i></div>
-              <div>
-                <h4 class="font-semibold">Teléfono</h4>
-                <p>+503 25376161<br>Urgencias: +503 77676406</p>
-              </div>
-            </div>
-            <div class="flex items-start">
-              <div class="bg-blue-700 p-3 rounded-full mr-4"><i class="fas fa-envelope"></i></div>
-              <div>
-                <h4 class="font-semibold">Correo Electrónico</h4>
-                <p>doctorsolhernandez@gmail.com</p>
-              </div>
-            </div>
-            <div class="flex items-start">
-              <div class="bg-blue-700 p-3 rounded-full mr-4"><i class="fas fa-clock"></i></div>
-              <div>
-                <h4 class="font-semibold">Horario de Atención</h4>
-                <p>Lunes a Viernes: 9:00 am - 6:00 pm<br>Sábados: 9:00 am - 1:00 pm</p>
-              </div>
-            </div>
-            </div>
-        <!-- 📌 MAPA GOOGLE -->
-        <h4 class="text-xl font-semibold mb-4">Ubicación</h4>
-        <div class="relative w-full pb-[56.25%] rounded-lg overflow-hidden shadow-lg">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d298.7308131861636!2d-89.24674487545845!3d13.70359202398243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2ssv!4v1749870425294!5m2!1sen!2ssv"
-            class="absolute top-0 left-0 w-full h-full border-0"
-            allowfullscreen=""
-            loading="lazy"
-            title="Ubicación consultorio Dr. Alfredo Sol Hernández">
-          </iframe>
-        </div>
+ <!-- 📌 BLOQUE CONTACTO + MAPA CORREGIDO -->
+<section class="py-16 bg-blue-800 text-white">
+  <div class="container mx-auto px-4 grid md:grid-cols-2 gap-10">
+    <!-- INFO + FORMULARIO -->
+    <div>
+      <h3 class="text-2xl font-bold mb-4">Información de Contacto</h3>
+      <ul class="space-y-4 mb-8">
+        <li><i class="fas fa-map-marker-alt mr-2"></i> Hospital Especializado Avante Escalón, 3a Calle Poniente 4920, San Salvador</li>
+        <li><i class="fas fa-phone-alt mr-2"></i> +503 25376161 | Urgencias: +503 77676406</li>
+        <li><i class="fas fa-envelope mr-2"></i> doctorsolhernandez@gmail.com</li>
+        <li><i class="fas fa-clock mr-2"></i> Lunes a Viernes: 9:00 am - 6:00 pm <br>Sábados: 9:00 am - 1:00 pm</li>
+      </ul>
 
-
-
-        <!-- 📌 FORMULARIO -->
-        <div class="md:w-1/2 bg-white rounded-lg shadow-xl p-8 text-gray-800">
-          <div id="success-message" class="hidden text-green-600 font-semibold text-center mb-6">
-            ¡Gracias por contactarnos! Te responderemos pronto.
-          </div>
-          <form id="contact-form" action="https://formsubmit.co/doctorsolhernandez@gmail.com" method="POST" class="space-y-6">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_template" value="table">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-              <div>
-                <label for="nombre" class="block mb-2 font-medium">Nombre completo</label>
-                <input type="text" id="nombre" name="nombre" class="w-full px-4 py-2 border border-gray-300 rounded-lg" required>
-              </div>
-              <div>
-                <label for="correo" class="block mb-2 font-medium">Correo electrónico</label>
-                <input type="email" id="correo" name="correo" class="w-full px-4 py-2 border border-gray-300 rounded-lg" required>
-              </div>
-              <div>
-                <label for="telefono" class="block mb-2 font-medium">Teléfono</label>
-                <input type="tel" id="telefono" name="telefono" class="w-full px-4 py-2 border border-gray-300 rounded-lg" required>
-              </div>
-              <div>
-                <label for="paciente" class="block mb-2 font-medium">Edad del paciente</label>
-                <input type="text" id="paciente" name="edad_paciente" class="w-full px-4 py-2 border border-gray-300 rounded-lg" required>
-              </div>
-            </div>
-            <div>
-              <label for="servicio" class="block mb-2 font-medium">Servicio de interés</label>
-              <select id="servicio" name="servicio" class="w-full px-4 py-2 border border-gray-300 rounded-lg" required>
-                <option value="">Seleccione un servicio</option>
-                <option value="circuncision">Circuncisión</option>
-                <option value="hidronefrosis">Hidronefrosis</option>
-                <option value="enuresis">Enuresis</option>
-                <option value="hipospadias">Hipospadias</option>
-                <option value="reflujo">Reflujo Vesicoureteral</option>
-                <option value="criptorquidia">Criptorquidia</option>
-                <option value="consulta">Consulta general</option>
-              </select>
-            </div>
-            <div>
-              <label for="mensaje" class="block mb-2 font-medium">Mensaje</label>
-              <textarea id="mensaje" name="mensaje" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg" required></textarea>
-            </div>
-            <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg">
-              Enviar Mensaje
-            </button>
-          </form>
-        </div>
+      <h4 class="text-xl font-semibold mb-4">Envíanos un mensaje</h4>
+      <div id="success-message" class="hidden text-green-400 font-semibold mb-4">
+        ¡Gracias por tu mensaje! Te responderemos pronto.
       </div>
+      <form id="contact-form" action="https://formsubmit.co/doctorsolhernandez@gmail.com" method="POST" class="space-y-4">
+        <input type="hidden" name="_captcha" value="false">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <input type="text" name="nombre" placeholder="Nombre completo" class="w-full px-4 py-2 rounded text-black" required>
+          <input type="email" name="correo" placeholder="Correo electrónico" class="w-full px-4 py-2 rounded text-black" required>
+          <input type="tel" name="telefono" placeholder="Teléfono" class="w-full px-4 py-2 rounded text-black" required>
+          <input type="text" name="edad_paciente" placeholder="Edad del paciente" class="w-full px-4 py-2 rounded text-black" required>
+        </div>
+        <select name="servicio" class="w-full px-4 py-2 rounded text-black" required>
+          <option value="">Seleccione un servicio</option>
+          <option value="circuncision">Circuncisión</option>
+          <option value="hidronefrosis">Hidronefrosis</option>
+          <option value="enuresis">Enuresis</option>
+          <option value="hipospadias">Hipospadias</option>
+          <option value="reflujo">Reflujo Vesicoureteral</option>
+          <option value="criptorquidia">Criptorquidia</option>
+          <option value="consulta">Consulta general</option>
+        </select>
+        <textarea name="mensaje" rows="4" placeholder="Mensaje" class="w-full px-4 py-2 rounded text-black" required></textarea>
+        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded">Enviar Mensaje</button>
+      </form>
     </div>
-  </section>
+
+    <!-- MAPA -->
+    <div class="w-full aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d298.7308131861636!2d-89.24674487545845!3d13.70359202398243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2ssv!4v1749870425294!5m2!1sen!2ssv"
+        class="w-full h-full border-0"
+        allowfullscreen=""
+        loading="lazy"
+        title="Ubicación consultorio Dr. Alfredo Sol Hernández">
+      </iframe>
+    </div>
+  </div>
+</section>
+
 
   <!-- ✅ FOOTER -->
   <footer class="bg-gray-900 text-white py-10 mt-16">
